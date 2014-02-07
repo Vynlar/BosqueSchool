@@ -1,3 +1,4 @@
+console.log("Ran.");
 var day = "";
 $.getJSON('http://enx3s.com/boscal/cal/?type=json', function(data) {
 	$("#loader").hide();
