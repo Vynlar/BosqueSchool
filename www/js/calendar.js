@@ -28,6 +28,7 @@ function loadCal()
 			if(firstRun)
 			{
 				day = label;
+				$("#day_text").html(day);
 				firstRun = false;
 			}
 		});
