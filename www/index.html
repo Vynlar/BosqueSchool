@@ -59,6 +59,10 @@
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript">
             app.initialize();
+            document.addEventListener("deviceready", function()
+                                      {
+                                          navigator.splashscreen.hide();
+                                      }, false);
         </script>
     </body>
 </html>
