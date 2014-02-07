@@ -39,6 +39,7 @@
 			
 			<div data-role="content">
 				<h1 style="text-align: center;">Bosque School</h1>
+				<p id="day">New text</p>
 			</div>
 			
 			<div data-role="footer" data-position="fixed">
@@ -52,17 +53,13 @@
 			</div>
 		</div>
 		
-		<script type="text/javascript">
-		
-		</script>
-		
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript">
             app.initialize();
-            document.addEventListener("deviceready", function()
-                                      {
-                                          navigator.splashscreen.hide();
-                                      }, false);
         </script>
+		
+		<script type="text/javascript">
+			alert(window.name);
+		</script>
     </body>
 </html>

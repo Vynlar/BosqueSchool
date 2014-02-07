@@ -1,5 +1,3 @@
-console.log("Ran.");
-var day = "";
 $.getJSON('http://enx3s.com/boscal/cal/?type=json', function(data) {
 	$("#loader").hide();
 	$.each(data[0], function(key, day) {
@@ -21,12 +19,7 @@ $.getJSON('http://enx3s.com/boscal/cal/?type=json', function(data) {
 				$("#cal_list").append('<li><p>' + event + "</i></p></li>");
 			}
 		});
-		$("#" + day_key).append("<span class='ui-li-count'>" + label + "</span>");
+		$("#" + day_key).append("<span id='day' class='ui-li-count'>" + label + "</span>");
 	});
 	$("#cal_list").listview('refresh');
 });
-
-function getDay(id)
-{
-	alert("testing");
-}
