@@ -2,7 +2,7 @@
 var day = "";
 function loadCal()
 {
-	$.getJSON('http://enx3s.com/boscal/cal/?type=json', function(data) {
+	$.getJSON('http://enx3s.com/boscal/cal/?type=json&noclean', function(data) {
 		$("#loader").hide();
 		var firstRun = true;
 		$.each(data[0], function(key, day) {
