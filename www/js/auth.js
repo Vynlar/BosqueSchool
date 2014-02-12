@@ -1,7 +1,4 @@
-$(document).ready(function() 
-    console.log("hello");
-	document.addEventListener("deviceready", startApp, false);
-});
+document.addEventListener("deviceready", startApp, false);
 
 function startApp()
 {
